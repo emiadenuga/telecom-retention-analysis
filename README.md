@@ -6,7 +6,7 @@ Raw data files are not included in this repository due to licensing and redistri
 
 Source dataset:
 - IBM Telecom Customer Churn Dataset
-- Link: [add dataset link here]
+- Link: [https://www.kaggle.com/datasets/thedrzee/customer-churn-in-telecom-sample-dataset-by-ibm/data]
 
 No transformations should be applied to data in this folder.
 
