@@ -8,5 +8,5 @@ Source dataset:
 - IBM Telecom Customer Churn Dataset
 - Link: [https://www.kaggle.com/datasets/thedrzee/customer-churn-in-telecom-sample-dataset-by-ibm/data]
 
-No transformations should be applied to data in this folder.
+No transformations are applied to data in this folder.
 
