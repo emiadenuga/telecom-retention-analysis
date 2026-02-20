@@ -110,8 +110,8 @@ Based on the analysis, potential recommendations include:
 
 ## Tools & Technologies
 - SQL
-- Python (pandas, numpy, matplotlib)
-- Excel / Google Sheets
+- Python (pandas, numpy, plotly)
+- Excel
 - Tableau or Power BI
 
 ---
