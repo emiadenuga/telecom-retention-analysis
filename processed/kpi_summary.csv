@@ -1,0 +1,8 @@
+metric,VALUE
+total_customers,7043
+churn_rate,0.265369870793696
+avg_tenure_churned,17.9791332263242
+avg_tenure_retained,37.5699652106687
+avg_monthly_charges_churned,74.4413322632424
+avg_monthly_charges_retained,61.2651236954001
+revenue_at_risk_mrr,139130.85
