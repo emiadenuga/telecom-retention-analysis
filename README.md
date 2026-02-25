@@ -1,7 +1,8 @@
 # Customer Retention & Revenue Risk Analysis (Telecom)
 
 ## Overview
-This project analyzes customer demographics, service subscriptions, and billing behavior to identify key drivers of customer churn and quantify revenue-at-risk segments. The objective is to translate analytical findings into actionable retention strategies for a subscription-based telecom business.
+This project analyzes customer demographics, service usage, and billing behavior to identify key drivers of customer churn and quantify revenue at risk. The goal is to translate analytical insights into actionable retention strategies for a subscription-based telecom business.
+
 
 ---
 
@@ -16,6 +17,7 @@ A telecom company is experiencing elevated customer churn, impacting monthly rec
     2. How does tenure impact churn and lifetime value?
     3. How do monthly charges and contract type relate to churn risk?
     4. Are customers with certain service bundles more likely to churn?
+       
 - Operational & Strategy Questions
     1. Which factors are the strongest indicators of churn from a business perspective?
     2. Which churned customers represent the highest revenue loss risk?
@@ -26,91 +28,84 @@ A telecom company is experiencing elevated customer churn, impacting monthly rec
 
 ## Dataset
 This project uses a publicly available sample telecom churn dataset provided by IBM Analytics, containing:
+
 - Customer demographics
 - Subscribed services
 - Account tenure and contract details
 - Billing and payment information
 - Churn indicator
 
-Raw data is not included in this repository. A link to the dataset source is provided in `/data/raw/README.md`.
+Raw data is included in `/data/raw`.
 
 ---
 
 ## Project Structure & Workflow
 
-### 1. Data Preparation
-**Location:** `/notebooks/01_data_cleaning.ipynb`
+### 1. Data Preparation (SQL)
+**Location:** `/sql`
 
-This step focuses on preparing the dataset for analysis, including:
-- Handling missing or invalid values (e.g., billing fields)
-- Standardizing categorical variables
-- Creating derived features such as tenure groups
-- Removing non-informative identifiers
+Data cleaning and feature engineering were performed in SQL (SQLite), including:
+- Handling missing values (e.g., `TotalCharges`)
+- Standardizing categorical fields
+- Creating features such as `tenure_group`, `services_count`, and `is_auto_pay`
 
 The goal is to produce a clean, analysis-ready dataset for downstream exploration.
 
 ---
 
-### 2. Exploratory Data Analysis (EDA)
+### 2. Data Vaildation
+**Location:** `/notebooks/01_data_cleaning.ipynb`
+
+Validates the cleaned dataset and ensures it is ready for analysis.
+
+---
+
+### 3. Exploratory Data Analysis (EDA) & Segment Analysis
+Churn & Revenue Risk Analysis & Business Recommendations
 **Location:** `/notebooks/02_exploratory_analysis.ipynb`
 
-This notebook explores patterns and trends related to churn, including:
-- Churn rates by contract type and tenure
-- Relationship between monthly charges and churn
-- Service combinations associated with higher or lower churn
-- Identification of high-risk customer segments
-
-Visualizations generated during EDA are saved to `/visuals`.
+- Churn patterns by contract type, tenure, and services  
+- Relationship between pricing and churn  
+- Identification of high-risk customer segments 
 
 ---
 
-### 3. Churn & Revenue Risk Analysis
+### 4. Churn & Revenue Risk Analysis
 **Location:** `/notebooks/03_churn_analysis.ipynb`
 
-This phase focuses on:
-- Quantifying churn drivers from a business perspective
-- Estimating revenue-at-risk by customer segment
-- Prioritizing segments for retention based on potential impact
-
-Optional modeling may be used to support prioritization, but the emphasis is on interpretability and business decision-making.
+- Quantifies revenue at risk  
+- Prioritizes customer segments  
+- Estimates impact of retention strategies
 
 ---
 
-### 4. SQL Analysis
-**Location:** `/sql/churn_analysis_queries.sql`
-
-SQL queries are used to:
-- Join and aggregate customer, service, and billing data
-- Segment churn behavior by key dimensions
-- Validate analytical findings across tools
+## Key Insights
+- Churn is the highest among early-tenure customers
+- Contract type is the strongest driver of churn
+- Higher monthly charges are associated with increased churn
+- Revenue risk concentrated in a small number of segments
 
 ---
 
-## Key Insights (Example Placeholder)
-- Customers on month-to-month contracts exhibit significantly higher churn than long-term contracts.
-- Early-tenure customers with higher monthly charges represent the highest revenue risk.
-- Certain service bundles are correlated with improved retention.
-
-(Insights will be updated as analysis is completed.)
-
+## Recommendations
+Based on the study, potential recommendations include:
+- Improve onboarding for new customers
+- Incentivize long-term contract adoption
+- Address pricing and value perception for high-paying customers 
+- Promote auto pay enrollment to reduce churn
+  
 ---
 
 ## Dashboard
 **Location:** `/dashboard/dashboard_link.md`
 
-An interactive dashboard summarizes key churn metrics, high-risk segments, and revenue impact for business stakeholders.
-
----
-
-## Recommendations
-Based on the analysis, potential recommendations include:
-- blah
+An interactive dashboard highlights key churn metrics, segment risk, and revenue impact for business stakeholders.
 
 ---
 
 ## Tools & Technologies
 - SQL
-- Python (pandas, numpy, plotly)
+- Python (pandas, numpy, matplotlib)
 - Excel
 - Tableau or Power BI
 
@@ -120,7 +115,6 @@ Based on the analysis, potential recommendations include:
 - Incorporate customer interaction or support data if available
 - Track churn reduction impact of proposed retention strategies
 - Expand analysis to include lifetime value estimation
-- will be updated at later date ^just placeholder
 
 ---
 
