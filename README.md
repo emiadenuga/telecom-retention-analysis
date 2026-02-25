@@ -121,5 +121,6 @@ An interactive dashboard highlights key churn metrics, segment risk, and revenue
 ## Contact
 **Emioluwa Adenuga**  
 LinkedIn: [https://www.linkedin.com/in/emioluwaadenuga/]
+
 Email: [ettisa4641@gmail.com]
 
