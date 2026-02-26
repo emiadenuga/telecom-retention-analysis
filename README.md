@@ -1,7 +1,9 @@
-### SQL Analysis
+Data Preparation (SQL)
 **Location:** `/sql`
 
-SQL queries are used to:
-- Join and aggregate customer, service, and billing data
-- Segment churn behavior by key dimensions
-- Validate analytical findings across tools
+Data cleaning and feature engineering were performed in SQL (SQLite), including:
+- Handling missing values (e.g., `TotalCharges`)
+- Standardizing categorical fields
+- Creating features such as `tenure_group`, `services_count`, and `is_auto_pay`
+
+The goal is to produce a clean, analysis-ready dataset for downstream exploration.
