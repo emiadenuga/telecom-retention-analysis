@@ -6,4 +6,4 @@ This project uses a publicly available sample telecom churn dataset provided by 
 - Billing and payment information
 - Churn indicator
 
-Raw data is included in this repository. A link to the dataset source is also provided in `/data/raw/README.md`.
+Raw data is included in this repository.
