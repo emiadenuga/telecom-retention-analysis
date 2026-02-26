@@ -97,9 +97,9 @@ Based on the study, potential recommendations include:
 ---
 
 ## Dashboard
-**Location:** `/dashboard/dashboard_link.md`
+**Location:** `/dashboard`
 
-An interactive dashboard highlights key churn metrics, segment risk, and revenue impact for business stakeholders.
+An interactive dashboard highlights key churn metrics, segment risk, and revenue impact for business stakeholders. (Available upon request)
 
 ---
 
