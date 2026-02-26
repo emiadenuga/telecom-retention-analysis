@@ -53,7 +53,7 @@ The goal is to produce a clean, analysis-ready dataset for downstream exploratio
 
 ---
 
-### 2. Data Vaildation
+### 2. Data Validation
 **Location:** `/notebooks/01_data_cleaning.ipynb`
 
 Validates the cleaned dataset and ensures it is ready for analysis.
@@ -107,7 +107,7 @@ An interactive dashboard highlights key churn metrics, segment risk, and revenue
 - SQL
 - Python (pandas, numpy, matplotlib)
 - Excel
-- Tableau or Power BI
+- Power BI
 
 ---
 
